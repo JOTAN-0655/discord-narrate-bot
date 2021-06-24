@@ -45,7 +45,7 @@ start.batの内容
 java -jar ./Discord-ChatReadBot-X.X.X.jar
 ```
 X.X.Xは、バージョンによって適宜変えてください。
-botを起動すると、`bot.config`ができるはずです。
+start.batをダブルクリックして、botを起動すると、`bot.config`ができるはずです。
 次に、botのファイルと同じディレクトリに、audio_gen.batを作ります。
 ```
 set TEMP_PATH=./audio/%2.wav
