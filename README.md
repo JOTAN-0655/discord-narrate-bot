@@ -19,13 +19,14 @@ https://www.oracle.com/java/technologies/
 
 ### botの取得
 releases から、最新版をダウンロードしてください。
+
 https://github.com/JOTAN-0655/discord-narrate-bot/releases
+
 ダウンロードした、ファイルは、どこかのフォルダに移動しておいてください。
 できれば、読み上げBOT用のフォルダがあるといいです。
 
 ### 音声合成のインストール(gTTS)
-また、gTTSの使用には、pythonのインストールが必要です。pythonのインストールはここでは解説しません。
-なお、pythonを導入する理由は pip を使用するためです。
+gTTSをインストールするにはpipを使うため、pythonがインストールされている必要がありますが、ここでは解説しません。
 #### windows
 cmd を起動します。
 cmdに、次のコマンドを入力
