@@ -97,24 +97,24 @@ token=xxxxxxxxxxxxxxxxxxxxxx
 token は、自分のDiscordのBOT のtokenを入力してください
 最後に、起動すればOKです。
 
-### コンフィグの項目
+### bot.config　について
 コンフィグの項目を次に示します。
-#### audio_export_path
+### audio_export_path
 読み上げ音声が出力されるパス
 相対パスと絶対パスを使用できます。
 
-#### audio_gen_command
+### audio_gen_command
 読み上げ音声を生成するスクリプトのパス
 相対パスと絶対パスを使用できます。
 
-#### dictionary_path
+### dictionary_path
 辞書ファイルを保存するフォルダのパス
 相対パスと絶対パスを使用できます。
 
-#### token
+### token
 discordのBOTのtoken
 
-#### name_read_mode
+### name_read_mode
 名前の読み上げモード
 次にモードを示します。
 
