@@ -1,14 +1,14 @@
 # discord-narrate-bot
 DISCORDのチャットを読み上げるBOTです。
 
-## requires
+# requires
 このBOTを起動するには以下の環境が必要です。
 - JDK 14 or higher
 
-## notice
+# notice
 この解説では、音声合成にgTTSを使用することを前提に解説します。
 
-## setup & usage
+# setup & usage
 ## Java Install
 ### windows
 は、次のURLから最新のJDKをインストールしてください
@@ -96,7 +96,7 @@ token=xxxxxxxxxxxxxxxxxxxxxx
 token は、自分のDiscordのBOT のtokenを入力してください
 最後に、起動すればOKです。
 
-## bot.config　について
+# bot.config　について
 コンフィグの項目を次に示します。
 ### audio_export_path
 読み上げ音声が出力されるパス
