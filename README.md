@@ -72,10 +72,10 @@ gtts-cli "$1" -l ja --output $TMP
 次に、botのファイルと同じディレクトリに、audio と dictionary というフォルダを作ります。
 
 ### コンフィグの編集
-#### windows
-bot.configの内容を編集します。
+bot.configの内容を編集します。<br>
 細かい コンフィグの編集に関しては 「bot.config　について」をご覧ください。
-次に、bot.configのサンプル(以上の手順を踏んできた場合)を示します。
+#### windows
+以上の説明手順に従った場合の bot.config のサンプルを示します。
 ```
 audio_export_path=./audio
 audio_gen_command=./audio_gen.bat
@@ -86,8 +86,7 @@ token は、自分のDiscordのBOT のtokenを入力してください。
 最後に、start.batをダブルクリックしてうまく起動するはずです。
 
 #### linux
-次に、bot.configの内容を編集します
-次に、bot.configのサンプル(以上の手順を踏んできた場合)を示します。
+以上の説明手順に従った場合の bot.config のサンプルを示します。
 ```
 audio_export_path=./audio
 audio_gen_command=sh audio_gen.sh
