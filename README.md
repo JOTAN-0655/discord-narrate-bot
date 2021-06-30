@@ -8,7 +8,7 @@ DISCORDのチャットを読み上げるBOTです。
 ## notice
 この解説では、音声合成にgTTSを使用することを前提に解説します。
 
-## setup
+## setup & usage
 ### Java Install
 #### windows
 は、次のURLから最新のJDKをインストールしてください
