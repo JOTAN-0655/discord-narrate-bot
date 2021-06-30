@@ -74,7 +74,7 @@ gtts-cli "$1" -l ja --output $TMP
 ### コンフィグの編集
 #### windows
 bot.configの内容を編集します。
-細かい コンフィグの編集に関しては 「コンフィグの項目」をご覧ください。
+細かい コンフィグの編集に関しては 「bot.config　について」をご覧ください。
 次に、bot.configのサンプル(以上の手順を踏んできた場合)を示します。
 ```
 audio_export_path=./audio
@@ -97,7 +97,7 @@ token=xxxxxxxxxxxxxxxxxxxxxx
 token は、自分のDiscordのBOT のtokenを入力してください
 最後に、起動すればOKです。
 
-### bot.config　について
+## bot.config　について
 コンフィグの項目を次に示します。
 ### audio_export_path
 読み上げ音声が出力されるパス
