@@ -8,7 +8,7 @@ DISCORDのチャットを読み上げるBOTです。
 # notice
 この解説では、音声合成にgTTSを使用することを前提に解説します。
 
-# setup & usage
+# setup
 ## Java Install
 ### windows
 は、次のURLから最新のJDKをインストールしてください
@@ -127,3 +127,23 @@ discordのBOTのtoken
 `name_read_mode = user_id,nickname`
 
 この場合は、ユーザーIDを読み上げた後、ニックネームを読み上げて　本文を読み上げるようになります。
+
+# usage
+このBOTは次のコマンドがあります。
+## !jn help
+コマンド一覧を表示します
+## !jn
+ボイスチャンネル参加＆読み上げ開始
+## !jn join
+ボイスチャンネル参加
+## !jn leave
+ボイスチャンネルを抜ける
+## !jn n stasrt
+読み上げ開始
+## !jn n stop
+読み上げ停止
+## !jn dic add [単語] [読み]
+辞書を追加します。
+## !jn dic remove [単語]
+辞書を削除します。
+
