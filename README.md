@@ -130,7 +130,7 @@ discordのBOTのtoken
 
 ### bot_command_prefix
 BOTを制御するコマンドの接頭語<br>
-初期設定は'!jn'
+初期設定は'!jn'<br>
 空白を含めて設定することはできません。
 
 # usage
