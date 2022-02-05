@@ -8,8 +8,11 @@ DISCORDのチャットを読み上げるBOTです。
 # installation
 How_to_Install.md に書いてあります。
 
-# bot.config　について
+# configuration
 Bot_Config.md に書いてあります。
+
+# change voice
+Voice_Change.md に書いてあります。
 
 # usage
 このBOTは次のコマンドがあります。
