@@ -1,20 +1,20 @@
 # discord-narrate-bot
 DISCORDのチャットを読み上げるBOTです。
 
-# requires
+# 要求
 このBOTを起動するには以下の環境が必要です。
 - JDK 14 or higher
 
-# installation
+# 導入方法
 How_to_Install.md に書いてあります。
 
-# configuration
+# コンフィグ（設定）
 Bot_Config.md に書いてあります。
 
-# change voice
+# 読み上げ音声変更
 Voice_Change.md に書いてあります。
 
-# usage
+# BOTのコマンド(default)
 このBOTは次のコマンドがあります。
 ## !jn help
 コマンド一覧を表示します
