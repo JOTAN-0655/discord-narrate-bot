@@ -7,5 +7,5 @@ start .\softalk\SofTalk.exe /X:1 /V:100 /R:%EXPORT_PATH% /W:%1
 ```
 ※audioフォルダまでの絶対パスは、エクスプローラー等からわかります。
 
-## ⑤Softalkをダウンロードする。
+## ②Softalkをダウンロードする。
 ダウンロードしたファイルを展開し、なかのSoftalkというフォルダを、botのjarファイルがあるところにコピーする
