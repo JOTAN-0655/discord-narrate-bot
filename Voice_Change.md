@@ -19,14 +19,28 @@ https://github.com/VOICEVOX/voicevox_core から
 https://visualstudio.microsoft.com/ja/visual-cpp-build-tools/ から インストール
 - C++ Build Tools
 
+## /voicevox_core-main/example/python/run.py の変更
+一番下あたりの<br>
+```run(**vars(parser.parse_args()))```<br>
+の上に<br>
+```parser.add_argument("--export_path", type=str, required=True)```<br>
+を追加。<br>
+<br>
+``def run`` あたりの<br>
+```cpu_num_threads: int```の後ろに`,`をつけて改行し、<br>
+```export_path: str``` を追加。<br>
+
+``# 保存`` の下の `soundfile.write ・・・` を <br>
+``soundfile.write(export_path, data=wave, samplerate=24000)`` に変更<br>
+
 ## audio_gen.bat
 ```
 set TMP=[audioフォルダまでの絶対パス]\%2.wav
 
-python3 ./audio_gen/voicevox_core-main/example/python/run.py \
+python3 .[セットアップしたパス]/voicevox_core-main/example/python/run.py \
 --text "%1" \
 --speaker_id 0 \
---root_dir_path="./audio_gen/voicevox_core-main/release" \
+--root_dir_path=".[セットアップしたパス]/voicevox_core-main/release" \
 --export_path %TMP%
 
 ```
