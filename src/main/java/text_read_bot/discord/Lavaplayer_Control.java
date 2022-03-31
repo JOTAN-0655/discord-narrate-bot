@@ -101,7 +101,8 @@ public class Lavaplayer_Control {
 			@Override
 			public void loadFailed(FriendlyException exception) {
 				// TODO 自動生成されたメソッド・スタブ
-				tc.sendMessage("読み上げるファイルが存在しませんでした。").complete();
+				tc.sendMessage("読み上げファイルの読み込みに失敗しました。").complete();
+				exception.printStackTrace();
 			}
 
 		});
