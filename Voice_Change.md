@@ -5,6 +5,7 @@ audio_gen.batの内容をいったん全部消して、次の２行に書き換�
 set EXPORT_PATH=[audioフォルダまでの絶対パス]\%2.wav
 start .\softalk\SofTalk.exe /X:1 /V:100 /R:%EXPORT_PATH% /W:%1 
 ```
+引数を自分で変えることで音声の種類を変えることができます。
 ※audioフォルダまでの絶対パスは、エクスプローラー等からわかります。
 
 ## ②Softalkをダウンロードする。
