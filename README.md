@@ -3,7 +3,7 @@ DISCORDのチャットを読み上げるBOTです。
 
 # 要求
 このBOTを起動するには以下の環境が必要です。
-- JDK 14 or higher
+- JDK 17 or higher
 
 # 導入方法
 How_to_Install.md に書いてあります。
