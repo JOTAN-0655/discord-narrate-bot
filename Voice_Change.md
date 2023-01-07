@@ -11,6 +11,13 @@ start .\softalk\SofTalk.exe /X:1 /V:100 /R:%EXPORT_PATH% /W:%1
 ## ②Softalkをダウンロードする。
 ダウンロードしたファイルを展開し、なかのSoftalkというフォルダを、botのjarファイルがあるところにコピーする
 
+# TarakoTalk (WINDOWS)
+## audio_gen.bat
+```
+set EXPORT_PATH=[audioフォルダまでの絶対パス]\%2.wav
+call [TarakoTalk.exeまでのパス] save %1 %EXPORT_PATH% 
+```
+
 # Voice Vox
 ## ダウンロードするもの
 https://github.com/VOICEVOX/voicevox_core から
