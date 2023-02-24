@@ -1,48 +1,48 @@
-#AutoJoin
+# AutoJoin
 ボイスチャンネルに誰かが参加したときに、そこに自動で参加します。<br>
 |設定|説明|
 |---|---|
 | true | 有効 |
 | false | 無効 |
-#AutoLeave
+# AutoLeave
 BOTが参加しているVCから全員が抜けた場合、自動でVCから抜けます。<br>
 |設定|説明|
 |---|---|
 | true | 有効 |
 | false | 無効 |
-#DictionarySavePath
+# DictionarySavePath
 辞書ファイルを保存すためのフォルダのパス<br>
-#DiscordCommand
+# DiscordCommand
 BOTの基本コマンドを設定します<br>
 デフォルトは`!narrate`<br>
 <br>
 空白を含めたコマンドには設定できません<br>
 NG例<br>
 `!read bot`<br>
-#DiscordToken
+# DiscordToken
 DiscordのBOTのトークン<br>
-#NarrateExportPath
+# NarrateExportPath
 読み上げ音声が出力されるパス。<br>
 相対パスと絶対パスを使用できます。<br>
-#NarrateGenerateCommand
+# NarrateGenerateCommand
 読み上げ音声を生成スクリプトを実行するためのコマンドです。<br>
-#NarrateGenerateDelay
+# NarrateGenerateDelay
 読み上げ音声の存在が確認されてからの待機時間です。<br>
 wavファイルが最後に一気にできるのではなく、徐々にwavファイルが生成される場合に使えます。<br>
 -1に設定すると、無効にできます。<br>
-#NarrateGenerateLog
+# NarrateGenerateLog
 読み上げ音声の生成スクリプトのログを表示<br>
 |設定|説明|
 |---|---|
 | true | 有効 |
 | false | 無効 |
-#NarrateGenerateTimeout
+# NarrateGenerateTimeout
 読み上げ音声の生成の待機時間です。<br>
 -1に設定することで、無効にできます。
-#NarrateIgnorePrefix
+# NarrateIgnorePrefix
 とある文字から始まるチャットを読み上げない設定はここから可能です<br>
 例えば、「!」を設定すると、!から始まる文章は読み上げられません。<br>
-#NarrateNameMode
+# NarrateNameMode
 メッセージ送信者の名前を読み上げます<br>
 |設定|説明|
 |---|---|
@@ -50,7 +50,7 @@ wavファイルが最後に一気にできるのではなく、徐々にwavフ�
 | user_id | ユーザーIDを読み上げます | 
 | nickname | ニックネームを読み上げます |
 | name | 表示名を読み上げます |
-#NarrateUrlMode
+# NarrateUrlMode
 URLの読み上げモードを設定します。<br>
 |設定|説明|
 |---|---|
