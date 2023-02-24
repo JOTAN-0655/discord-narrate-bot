@@ -60,6 +60,7 @@ URLの読み上げモードを設定します。<br>
 <br><br><br>
 ## 古いコンフィグファイルとの対応
 |古|新|
+|---|---|
 |audio_export_path|NarrateExportPath|
 |audio_gen_command|NarrateGenerateCommand|
 |dictionary_path|DictionarySavePath|
