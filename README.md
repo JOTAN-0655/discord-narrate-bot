@@ -16,22 +16,22 @@ Voice_Change.md に書いてあります。
 
 # BOTのコマンド(default)
 このBOTは次のコマンドがあります。
-## !jn help
+## !narrate help
 コマンド一覧を表示します
-## !jn
+## !narrate
 ボイスチャンネル参加＆読み上げ開始
-## !jn join
+## !narrate join
 ボイスチャンネル参加
-## !jn leave
+## !narrate leave
 ボイスチャンネルを抜ける
-## !jn n stasrt
+## !narrate n stasrt
 読み上げ開始
-## !jn n stop
+## !narrate n stop
 読み上げ停止
-## !jn dic add [単語] [読み]
+## !narrate dic add [単語] [読み]
 辞書を追加します。
-## !jn dic remove [単語]
+## !narrate dic remove [単語]
 辞書を削除します。
-## !jn reload
+## !narrate reload
 コンフィグのリロード
 
