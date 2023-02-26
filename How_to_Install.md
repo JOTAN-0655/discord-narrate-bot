@@ -8,7 +8,7 @@
 https://www.oracle.com/java/technologies/
 ### linux
 は、次のコマンドをコンソールに入力してインストール
-`sudo apt install openjdk-14-jdk`
+`sudo apt install openjdk-18-jdk`
 
 ## botの取得
 releases から、最新版をダウンロードしてください。
