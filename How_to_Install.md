@@ -70,10 +70,10 @@ bot.configの内容を編集します。<br>
 ### windows
 以上の説明手順に従った場合の bot.config のサンプルを示します。
 ```
-audio_export_path=./audio
-audio_gen_command=./audio_gen.bat
-dictionary_path=./dictionary
-token=xxxxxxxxxxxxxxxxxxxxxx
+NarrateExportPath=./audio
+NarrateGenerateCommand=./audio_gen.bat
+DictionarySavePath=./dictionary
+DiscordToken=xxxxxxxxxxxxxxxxxxxxxx
 ```
 token は、自分のDiscordのBOT のtokenを入力してください。
 最後に、start.batをダブルクリックしてうまく起動するはずです。
@@ -81,10 +81,10 @@ token は、自分のDiscordのBOT のtokenを入力してください。
 ### linux
 以上の説明手順に従った場合の bot.config のサンプルを示します。
 ```
-audio_export_path=./audio
-audio_gen_command=sh audio_gen.sh
-dictionary_path=./dictionary
-token=xxxxxxxxxxxxxxxxxxxxxx
+NarrateExportPath=./audio
+NarrateGenerateCommand=sh audio_gen.sh
+DictionarySavePath=./dictionary
+DiscordToken=xxxxxxxxxxxxxxxxxxxxxx
 ```
 token は、自分のDiscordのBOT のtokenを入力してください
 最後に、起動すればOKです。
