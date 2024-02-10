@@ -49,8 +49,11 @@ botを起動すると、`bot.config`ができるはずです。
 botのファイルと同じディレクトリに、audio_gen.batを作ります。
 次に、gTTSを使用したときのaudio_genのサンプルを示します。
 ```
+@echo off
 set TEMP_PATH=./audio/%2.wav
-gtts-cli %1 -l ja --output $TEMP_PATH
+set "LANGUAGE=%3"
+if "%LANGUAGE%"=="null" set "LANGUAGE=jp"
+gtts-cli %1 -l %LANGUAGE% --output %TEMP_PATH%
 ```
 次に、botのファイルと同じディレクトリに、audio と dictionary というフォルダを作ります。
 
@@ -58,11 +61,22 @@ gtts-cli %1 -l ja --output $TEMP_PATH
 botのファイルと同じディレクトリに、audio_gen.shを作ります。
 次に、gTTSを使用したときのaudio_gen.shのサンプルを示します。
 ```
-#!/bin/sh
+#!/bin/bash
 TMP=./audio/"$2".wav
-gtts-cli "$1" -l ja --output $TMP
+LANGUAGE=${3:-jp}
+gtts-cli "$1" -l $LANGUAGE --output $TMP
 ```
 次に、botのファイルと同じディレクトリに、audio と dictionary というフォルダを作ります。
+
+### 共通
+botのファイルと同じディレクトリに、`list.txt`というファイルを作ります。
+このファイルは、`/voice`コマンドで出てくる音声の種類の候補を示すものとなります。
+試しに、英語と日本語を試せるようにしましょう。
+```
+日本語,jp
+英語,en
+```
+jpとenは、音声生成スクリプトに渡される引数です。
 
 ## コンフィグの編集
 bot.configの内容を編集します。<br>
