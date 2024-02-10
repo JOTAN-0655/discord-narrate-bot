@@ -12,13 +12,6 @@ BOTが参加しているVCから全員が抜けた場合、自動でVCから抜�
 | false | 無効 |
 # DictionarySavePath
 辞書ファイルを保存すためのフォルダのパス<br>
-# DiscordCommand
-BOTの基本コマンドを設定します<br>
-デフォルトは`!narrate`<br>
-<br>
-空白を含めたコマンドには設定できません<br>
-NG例<br>
-`!read bot`<br>
 # DiscordToken
 DiscordのBOTのトークン<br>
 # NarrateExportPath
@@ -26,6 +19,15 @@ DiscordのBOTのトークン<br>
 相対パスと絶対パスを使用できます。<br>
 # NarrateGenerateCommand
 読み上げ音声を生成スクリプトを実行するためのコマンドです。<br>
+# NarrateVoiceList
+読み上げ音声で利用可能なバリエーションの一覧を示すテキストファイルまでのパスです。<br>
+テキストファイルは次の例に示すように、`名前,id`の形で表します。<br>
+`id`は、音声生成スクリプトの第三引数に渡されます。
+テキストファイルの例<br>
+```
+GOOGLEの音声,google
+VOICEVOXの音声,voicevox
+```
 # NarrateGenerateDelay
 読み上げ音声の存在が確認されてからの待機時間です。<br>
 wavファイルが最後に一気にできるのではなく、徐々にwavファイルが生成される場合に使えます。<br>
@@ -57,19 +59,3 @@ URLの読み上げモードを設定します。<br>
 | message | `URLが送信されました`と読み上げます。 |
 | no | 読み上げません。 |
 
-<br><br><br>
-## 古いコンフィグファイルとの対応
-|古|新|
-|---|---|
-|audio_export_path|NarrateExportPath|
-|audio_gen_command|NarrateGenerateCommand|
-|dictionary_path|DictionarySavePath|
-|token|DiscordToken|
-|generate_sound_timeout|NarrateGenerateTimeout|
-|file_export_delay|NarrateGenerateDelay|
-|generate_log|NarrateGenerateLog|
-|bot_command_prefix|DiscordCommand|
-|url_read_mode|NarrateUrlMode|
-|name_read_mode|NarrateNameMode|
-|auto_join|AutoJoin|
-|auto_leave|AutoLeave|
