@@ -12,6 +12,8 @@ BOTが参加しているVCから全員が抜けた場合、自動でVCから抜�
 | false | 無効 |
 # DictionarySavePath
 辞書ファイルを保存すためのフォルダのパス<br>
+# UserPreferenceSavePath
+ユーザー設定を保存するためのフォルダのパス<br>
 # DiscordToken
 DiscordのBOTのトークン<br>
 # NarrateExportPath
