@@ -25,4 +25,5 @@ Voice_Change.md に書いてあります。
 ## /dictionary remove word:[単語]
 辞書を削除します。
 ## /voice name:[音声の種類]
-NarrateVoiceListで設定した音声一覧ファイルの中から選べます。
+NarrateVoiceListで設定した音声一覧ファイルの中から選べます。<br>
+コマンドで示せる候補は最大25個までなので、登録されている音声一覧が25個以上の時は、ランダムに選んだものが候補に出ます。<br>
