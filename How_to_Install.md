@@ -63,7 +63,10 @@ botのファイルと同じディレクトリに、audio_gen.shを作ります�
 ```
 #!/bin/bash
 TMP=./audio/"$2".wav
-LANGUAGE=${3:-jp}
+LANGUAGE=$3
+if [ "$LANGUAGE" = "null" ]; then
+    LANGUAGE=jp
+fi
 gtts-cli "$1" -l $LANGUAGE --output $TMP
 ```
 次に、botのファイルと同じディレクトリに、audio と dictionary というフォルダを作ります。
