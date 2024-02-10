@@ -24,4 +24,5 @@ Voice_Change.md に書いてあります。
 辞書を追加します。
 ## /dictionary remove word:[単語]
 辞書を削除します。
-
+## /voice name:[音声の種類]
+NarrateVoiceListで設定した音声一覧ファイルの中から選べます。
