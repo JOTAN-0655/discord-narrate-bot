@@ -52,7 +52,7 @@ botのファイルと同じディレクトリに、audio_gen.batを作ります�
 @echo off
 set TEMP_PATH=./audio/%2.wav
 set "LANGUAGE=%3"
-if "%LANGUAGE%"=="null" set "LANGUAGE=jp"
+if "%LANGUAGE%"=="null" set "LANGUAGE=ja"
 gtts-cli %1 -l %LANGUAGE% --output %TEMP_PATH%
 ```
 次に、botのファイルと同じディレクトリに、audio と dictionary というフォルダを作ります。
@@ -65,7 +65,7 @@ botのファイルと同じディレクトリに、audio_gen.shを作ります�
 TMP=./audio/"$2".wav
 LANGUAGE=$3
 if [ "$LANGUAGE" = "null" ]; then
-    LANGUAGE=jp
+    LANGUAGE=ja
 fi
 gtts-cli "$1" -l $LANGUAGE --output $TMP
 ```
@@ -76,7 +76,7 @@ botのファイルと同じディレクトリに、`list.txt`というファイ�
 このファイルは、`/voice`コマンドで出てくる音声の種類の候補を示すものとなります。
 試しに、英語と日本語を試せるようにしましょう。
 ```
-日本語,jp
+日本語,ja
 英語,en
 ```
 jpとenは、音声生成スクリプトに渡される引数です。
