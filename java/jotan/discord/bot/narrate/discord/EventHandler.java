@@ -32,7 +32,6 @@ import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.entities.channel.ChannelType;
 import net.dv8tion.jda.api.entities.channel.middleman.AudioChannel;
 import net.dv8tion.jda.api.entities.channel.unions.MessageChannelUnion;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceUpdateEvent;
@@ -112,9 +111,6 @@ public class EventHandler extends ListenerAdapter implements Listener {
 
 	@Override
 	public void onMessageReceived(MessageReceivedEvent e) {
-		if (!e.getChannelType().equals(ChannelType.TEXT))
-			return;
-
 		Guild guild = e.getGuild();
 		Member member = e.getMember();
 		MessageChannelUnion textchannel = e.getChannel();
